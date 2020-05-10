@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidad.cs" />
+    <Compile Include="EntidadElectricaribe.cs" />
+    <Compile Include="EntidadEmdupar.cs" />
+    <Compile Include="EntidadGasCaribe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

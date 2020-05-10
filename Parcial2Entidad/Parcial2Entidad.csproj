@@ -46,16 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ConsultarEntidadesGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ConsultarEntidadesGUI.Designer.cs">
+      <DependentUpon>ConsultarEntidadesGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalGui.Designer.cs">
+      <DependentUpon>PrincipalGui.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="RegistrarEntidadesGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarEntidadesGui.Designer.cs">
+      <DependentUpon>RegistrarEntidadesGui.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PrincipalGui.resx">
+      <DependentUpon>PrincipalGui.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +78,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarEntidadesGui.resx">
+      <DependentUpon>RegistrarEntidadesGui.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
