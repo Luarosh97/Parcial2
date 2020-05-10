@@ -60,7 +60,7 @@
             "Electricaribes",
             "Emdupares",
             "Gascaribes"});
-            this.TipoConsultacmb.Location = new System.Drawing.Point(123, 40);
+            this.TipoConsultacmb.Location = new System.Drawing.Point(159, 40);
             this.TipoConsultacmb.Name = "TipoConsultacmb";
             this.TipoConsultacmb.Size = new System.Drawing.Size(121, 21);
             this.TipoConsultacmb.TabIndex = 0;

@@ -46,7 +46,7 @@ namespace Parcial2Entidad
 
         public void Consultar()
         {
-            if (TipoConsultacmb.SelectedIndex == 0)
+            if (TipoConsultacmb.SelectedIndex==0)
             {
                 respuestaConsulta = entidadService.Consultar();
                 dataGridView1.DataSource = respuestaConsulta.entidades;
@@ -57,38 +57,39 @@ namespace Parcial2Entidad
 
             }
 
-            else if (TipoConsultacmb.SelectedIndex == 1)
+            else if (TipoConsultacmb.SelectedIndex==1)
             {
                 dataGridView1.DataSource = entidadService.ListaElectribes();
                 entidades = Electricaribes;
                 Emdupares = "0";
                 Gascaribes = "0";
-
+                TotalEmdupares = "0";
+               TotalEntidades = "0";
                 TotalGacaribes = "0";
                 TotalElectricaribes = entidadService.SumarElectricaribes().ToString();
-                TotalEmdupares = "0";
+               
             }
 
-            else if (TipoConsultacmb.SelectedIndex == 2)
+            else if (TipoConsultacmb.SelectedIndex==2)
             {
                 dataGridView1.DataSource = entidadService.ListaEmdupares();
                 entidades = Emdupares;
                 Electricaribes = "0";
                 Gascaribes = "0";
-
+                TotalEntidades = "0";
                 TotalGacaribes = "0";
                 TotalElectricaribes = "0";
                 TotalEmdupares = entidadService.SumarEmdupares().ToString();
 
             }
 
-            else if (TipoConsultacmb.SelectedIndex == 3) {
+            else if (TipoConsultacmb.SelectedIndex==3) {
 
                 dataGridView1.DataSource = entidadService.ListaGasCaribes();
                 entidades =Gascaribes;
                 Electricaribes = "0";
                 Emdupares= "0";
-
+                TotalEntidades = "0";
                 TotalGacaribes = entidadService.SumarGascaribes().ToString();
                 TotalElectricaribes = "0";
                 TotalEmdupares = "0";
@@ -100,14 +101,14 @@ namespace Parcial2Entidad
 
         private void LlenarCampos()
         {
-           entidades= entidadestxt.Text;
-           Electricaribes = electricaribetxt.Text;
-           Gascaribes= gascaribestxt.Text;
-          Emdupares = emduparestxt.Text;
-           TotalEntidades = totalentidadestxt.Text;
-           TotalElectricaribes = totalelectricaribestxt.Text;
-            TotalEmdupares = totalemduparestxt.Text;
-            TotalGacaribes = totalgascaribestxt.Text;
+       entidadestxt.Text=entidades;
+         electricaribetxt.Text = Electricaribes;
+         gascaribestxt.Text = Gascaribes ;
+          emduparestxt.Text = Emdupares ;
+           totalentidadestxt.Text = TotalEntidades ;
+           totalelectricaribestxt.Text= TotalElectricaribes ;
+           totalemduparestxt.Text= TotalEmdupares ;
+          totalgascaribestxt.Text = TotalGacaribes;
         }
     }
 }

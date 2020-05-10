@@ -136,7 +136,7 @@ namespace DAL
 
         public decimal SumarEmdupares()
         {
-            return entidades.Where(l => l.Tipo == "emduapar").Sum(l => l.ValorPagado);
+            return entidades.Where(l => l.Tipo == "emdupar").Sum(l => l.ValorPagado);
         }
         public decimal SumarGascaribes()
         {
