@@ -22,4 +22,4 @@ namespace BLL
         public bool Error { get; set; }
     }
 }
-}
+

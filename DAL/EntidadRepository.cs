@@ -87,5 +87,62 @@ namespace DAL
             }
             return null;
         }
+
+
+        public int TotalizarEntidades()
+        {
+            return entidades.Count();
+        }
+
+
+        public int TotalizarElectricaribes()
+        {
+            return entidades.Where(l => l.Tipo == "electricaribe").Count();
+        }
+        public int TotalizarEmdupares()
+        {
+            return entidades.Where(l => l.Tipo == "emdupar").Count();
+        }
+        public int TotalizarGasCaribes()
+        {
+            return entidades.Where(l => l.Tipo == "gascaribe").Count();
+        }
+
+
+        public IList<Entidad> ListaElectribes()
+        {
+            return entidades.Where(l => l.Tipo == "electricaribe").ToList();
+        }
+
+        public IList<Entidad> ListaEmdupares()
+        {
+            return entidades.Where(l => l.Tipo == "emdupar").ToList();
+        }
+        public IList<Entidad> ListaGasCaribes()
+        {
+            return entidades.Where(l => l.Tipo == "gascaribe").ToList();
+        }
+
+
+        public decimal SumarEntidades()
+        {
+            return entidades.Sum(l => l.ValorPagado);
+
+        }
+        public decimal SumarElectricaribes()
+        {
+            return entidades.Where(l => l.Tipo == "electricaribe").Sum(l => l.ValorPagado);
+        }
+
+        public decimal SumarEmdupares()
+        {
+            return entidades.Where(l => l.Tipo == "emduapar").Sum(l => l.ValorPagado);
+        }
+        public decimal SumarGascaribes()
+        {
+            return entidades.Where(l => l.Tipo == "gascaribe").Sum(l => l.ValorPagado);
+        }
+
+
     }
 }

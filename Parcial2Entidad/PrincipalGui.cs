@@ -16,5 +16,17 @@ namespace Parcial2Entidad
         {
             InitializeComponent();
         }
+
+        private void registrarEntidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrarEntidadesGui registrarEntidadesGUI = new RegistrarEntidadesGui();
+            registrarEntidadesGUI.Show();
+        }
+
+        private void consultarEntidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarEntidadesGUI consultarEntidadesGUI = new ConsultarEntidadesGUI();
+            consultarEntidadesGUI.Show();
+        }
     }
 }

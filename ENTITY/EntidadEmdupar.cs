@@ -10,7 +10,7 @@ namespace ENTITY
     {
         public EntidadEmdupar() { }
         public EntidadEmdupar(string tipo, DateTime fecha, string numeroRecibo, decimal valorPagado) :
-            base("Emdupar", fecha, numeroRecibo, valorPagado)
+            base("emdupar", fecha, numeroRecibo, valorPagado)
         {
         }
     }

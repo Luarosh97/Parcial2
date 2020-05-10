@@ -66,6 +66,9 @@
     <Compile Include="RegistrarEntidadesGui.Designer.cs">
       <DependentUpon>RegistrarEntidadesGui.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConsultarEntidadesGUI.resx">
+      <DependentUpon>ConsultarEntidadesGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrincipalGui.resx">
       <DependentUpon>PrincipalGui.cs</DependentUpon>
     </EmbeddedResource>

@@ -11,7 +11,7 @@ namespace ENTITY
         public EntidadGasCaribe() { }
 
         public EntidadGasCaribe(string tipo, DateTime fecha, string numeroRecibo, decimal valorPagado) :
-            base("GasCaribe", fecha, numeroRecibo, valorPagado)
+            base("gascaribe", fecha, numeroRecibo, valorPagado)
         {
         }
     }

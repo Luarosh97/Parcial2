@@ -90,7 +90,59 @@ namespace BLL
             return respuesta;
         }
 
+        public int TotalizarEntidades()
+        {
+            return entidadRepositorio.TotalizarEntidades();
+        }
 
+
+        public int TotalizarElectricaribes()
+        {
+            return entidadRepositorio.TotalizarElectricaribes();
+        }
+        public int TotalizarEmdupares()
+        {
+            return entidadRepositorio.TotalizarEmdupares();
+        }
+        public int TotalizarGasCaribes()
+        {
+            return entidadRepositorio.TotalizarGasCaribes();
+        }
+
+
+        public IList<Entidad> ListaElectribes()
+        {
+            return entidadRepositorio.ListaElectribes();
+        }
+
+        public IList<Entidad> ListaEmdupares()
+        {
+            return entidadRepositorio.ListaEmdupares();
+        }
+        public IList<Entidad> ListaGasCaribes()
+        {
+            return entidadRepositorio.ListaGasCaribes();
+        }
+
+
+        public decimal SumarEntidades()
+        {
+            return entidadRepositorio.SumarEntidades();
+
+        }
+        public decimal SumarElectricaribes()
+        {
+            return entidadRepositorio.SumarElectricaribes();
+        }
+
+        public decimal SumarEmdupares()
+        {
+            return entidadRepositorio.SumarEmdupares();
+        }
+        public decimal SumarGascaribes()
+        {
+            return entidadRepositorio.SumarGascaribes();
+        }
 
     }
 
