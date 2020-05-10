@@ -16,6 +16,7 @@ namespace Parcial2Entidad
     {
        EntidadService entidadService =  new EntidadService();
         ResponseConsulta respuestaConsulta = new ResponseConsulta();
+        ExportarService exportarService = new ExportarService();
         string entidades;
         string TotalEntidades;
         string TotalElectricaribes;
@@ -109,6 +110,18 @@ namespace Parcial2Entidad
            totalelectricaribestxt.Text= TotalElectricaribes ;
            totalemduparestxt.Text= TotalEmdupares ;
           totalgascaribestxt.Text = TotalGacaribes;
+        }
+
+       public void button2_Click(object sender, EventArgs e)
+        {
+            string Mensaje;
+            string Tipo = "emdupares";
+            if (TipoConsultacmb.SelectedIndex == 2)
+            {
+                Tipo = "emdupares";
+            }
+            Mensaje = exportarService.ExportarPorEntidad(Tipo, entidadService.ListaEmdupares());
+            MessageBox.Show(Mensaje);
         }
     }
 }
