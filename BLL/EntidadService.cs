@@ -43,7 +43,7 @@ namespace BLL
                 IList<Entidad> entidades = entidadRepositorio.Consultar();
                 if (entidades.Count != 0)
                 {
-                    respuesta.Mensaje = "Se Consulta la Informacion de liquidaciones";
+                    respuesta.Mensaje = "Se Consulta la Informacion de  Entidades";
                     respuesta.entidades= entidades;
                 }
                 else
@@ -72,13 +72,13 @@ namespace BLL
               Entidad Entidad = entidadRepositorio.Buscar(numeroRecibo);
                 if (Entidad == null)
                 {
-                    respuesta.Mensaje = $"La Liquidaacion con  numero {numeroRecibo} no se encuentra registrada";
+                    respuesta.Mensaje = $"La Entidad con  numero {numeroRecibo} no se encuentra registrada";
                     respuesta.entidad= null;
                 }
                 else
                 {
                     respuesta.entidad= Entidad;
-                    respuesta.Mensaje = "liquidacion encontrada\n\n";
+                    respuesta.Mensaje = "Entidad encontrada\n\n";
                 }
             }
             catch (Exception E)
